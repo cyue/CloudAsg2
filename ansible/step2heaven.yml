@@ -1,0 +1,14 @@
+# one step finish all including environment installation, working code deployment, webserver start
+- name: One step to deploy all
+  hosts: cloud_asg
+  sudo: yes
+
+  roles:
+    - create_workdir
+    #- couchdb
+    #- harvest
+    - pkg_installation
+    #- scenario
+    - webserver
+
+

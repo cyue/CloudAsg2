@@ -1,9 +1,3 @@
-- name: Configure new couchDB
-  hosts: all
-  become: yes
-  become_user: root
-
-  tasks:
 # mount the volume with instances
   - name: create an ext4 partition
     filesystem: fstype=ext4 dev=/dev/vdc

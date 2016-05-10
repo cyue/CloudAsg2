@@ -274,6 +274,6 @@ class StripPathMiddleware(object):
 if __name__ == '__main__':
     bottle.run(app=StripPathMiddleware(app),
                 server='wsgiref',
-                host='115.146.89.128',
+                host='0.0.0.0',
                 port=80)
 
