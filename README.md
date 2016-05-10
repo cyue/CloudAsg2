@@ -1,6 +1,7 @@
 # CloudAsg2
 
 **Description**
+
 Generally, we give two options for system deployment and invocation: one is that the one can run scripts in respect of only some part of the whole application he interests, we divide the ansible auto-deploy script into modules, each module concerns an aspect of functionality of the application; another is simpler with only two scripts to run. We strongly recommend the demonstrator follow the former scheme, i.e. execute each module separately. Because the analysis script consumes too much time which could hinder the demonstration, so you may want to execute it at last in demonstration situation. Before running anything, you need to make sure the working environment is Linux and pre installed Python and Ansible. In below, we firstly gives step-by-step instruction of the first option and meanwhile illustrate functionality of each module:
 
 1. Run the following command in current directory to initialize 4 Ubuntu VMs on Nectar 
