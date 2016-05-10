@@ -1,6 +1,6 @@
 # one step finish all including environment installation, working code deployment, webserver start
 - name: Create Working directory on remote
-  hosts: cloud_asg
+  hosts: app
   sudo: yes
   vars:
     DIR: /cloud_asg

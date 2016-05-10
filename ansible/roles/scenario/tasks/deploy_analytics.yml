@@ -1,5 +1,5 @@
 - name: Deploy analytic programs on the remote working directory and run them all
-  hosts: cloud_asg
+  hosts: app
   sudo: yes
   vars:
     LOCAL_MAIN: ../../../../

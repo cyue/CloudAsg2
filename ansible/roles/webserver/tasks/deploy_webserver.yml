@@ -1,5 +1,5 @@
 - name: Deploy webserver on remote working directory and start
-  hosts: cloud_asg
+  hosts: app
   sudo: yes
   vars:
     LOCAL_MAIN: ../../../../

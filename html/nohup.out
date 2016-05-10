@@ -218,3 +218,122 @@ Hit Ctrl-C to quit.
 185.25.151.159 - - [10/May/2016 02:47:05] "GET http://testp4.pospr.waw.pl/testproxy.php HTTP/1.1" 404 806
 66.249.80.29 - - [10/May/2016 05:48:04] "GET / HTTP/1.1" 200 9459
 66.249.80.29 - - [10/May/2016 08:15:08] "GET /favicon.ico HTTP/1.1" 404 742
+123.59.59.52 - - [10/May/2016 09:42:43] "GET http://www.ctrip.com/ HTTP/1.1" 404 760
+169.229.3.91 - - [10/May/2016 09:46:28] code 400, message Bad request syntax ('x\x0cA[\x87\xf3\xbe\xa4\x18\x82\xb6\xf0\ri\xb3\x9b\xec\xc6\x0b\xecY-\x01\xa7\xe1\xe7\xbb\x82\xce\x8e\xae\xa2-\x19\x9e\xdb\xb2UD\x9e\xd4\xfa1\x88/\xecP\x94\xd6/C(%\xf4\xed\x03\xd91\xf2\xb4\xb5K\xd0\xda')
+169.229.3.91 - - [10/May/2016 09:46:28] "xA[‡ó¾¤‚¶ði³›ìÆìY-§áç»‚ÎŽ®¢-žÛ²UDžÔú1ˆ/ìP”Ö/C(%ôíÙ1ò´µKÐÚ" 400 -
+54.183.95.247 - - [10/May/2016 11:33:56] "GET / HTTP/1.1" 200 9459
+220.244.79.17 - - [10/May/2016 14:32:45] "GET / HTTP/1.1" 200 9459
+220.244.79.17 - - [10/May/2016 14:32:45] "GET /static/css/carousel.css HTTP/1.1" 200 2544
+220.244.79.17 - - [10/May/2016 14:32:45] "GET /static/js/holder.min.js HTTP/1.1" 200 21934
+220.244.79.17 - - [10/May/2016 14:32:45] "GET /static/js/ie-emulation-modes-warning.js HTTP/1.1" 200 2130
+220.244.79.17 - - [10/May/2016 14:32:45] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 200 641
+220.244.79.17 - - [10/May/2016 14:32:46] "GET /static/images/movie.jpg HTTP/1.1" 200 58841
+220.244.79.17 - - [10/May/2016 14:32:52] "GET /page/task3 HTTP/1.1" 200 5248
+220.244.79.17 - - [10/May/2016 14:33:11] "GET /task3data HTTP/1.1" 200 11286533
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+220.244.79.17 - - [10/May/2016 14:33:12] "GET /task3data HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 283, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+220.244.79.17 - - [10/May/2016 14:33:12] "GET /page/task4 HTTP/1.1" 200 10686
+220.244.79.17 - - [10/May/2016 14:33:13] "GET /task4data4 HTTP/1.1" 200 3703
+220.244.79.17 - - [10/May/2016 14:33:13] "GET /task4data3 HTTP/1.1" 200 1114
+220.244.79.17 - - [10/May/2016 14:33:13] "GET /task4data1 HTTP/1.1" 200 1148
+220.244.79.17 - - [10/May/2016 14:33:14] "GET /task4data2 HTTP/1.1" 200 3784
+220.244.79.17 - - [10/May/2016 14:35:04] "GET /page/task1 HTTP/1.1" 200 7456
+220.244.79.17 - - [10/May/2016 14:35:05] "GET /task1data1 HTTP/1.1" 200 17767
+220.244.79.17 - - [10/May/2016 14:35:05] "GET /task1data2 HTTP/1.1" 200 793
+220.244.79.17 - - [10/May/2016 14:35:13] "GET /page/task2 HTTP/1.1" 200 5092
+220.244.79.17 - - [10/May/2016 14:35:20] "GET /task2data1 HTTP/1.1" 200 29350
+220.244.79.17 - - [10/May/2016 14:35:30] "GET /task2data HTTP/1.1" 200 11195392
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+220.244.79.17 - - [10/May/2016 14:35:30] "GET /task2data HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 283, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+220.244.79.17 - - [10/May/2016 14:35:30] "GET /page/task3 HTTP/1.1" 200 5248
+220.244.79.17 - - [10/May/2016 14:35:48] "GET /task3data HTTP/1.1" 200 11286533
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+220.244.79.17 - - [10/May/2016 14:35:48] "GET /task3data HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 283, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+220.244.79.17 - - [10/May/2016 14:35:50] "GET /page/task3 HTTP/1.1" 200 5248
+220.244.79.17 - - [10/May/2016 14:36:19] "GET /task3data HTTP/1.1" 200 11286533
+220.244.79.17 - - [10/May/2016 14:38:52] "GET /page/task4 HTTP/1.1" 200 10686
+220.244.79.17 - - [10/May/2016 14:38:53] "GET /task4data3 HTTP/1.1" 200 1114
+220.244.79.17 - - [10/May/2016 14:38:54] "GET /task4data4 HTTP/1.1" 200 3703
+220.244.79.17 - - [10/May/2016 14:38:55] "GET /task4data2 HTTP/1.1" 200 3784
+220.244.79.17 - - [10/May/2016 14:38:55] "GET /task4data1 HTTP/1.1" 200 1148

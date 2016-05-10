@@ -1,5 +1,5 @@
 - name: Deploy tweet harvest scripts on remote working directory
-  hosts: cloud_asg
+  hosts: app
   sudo: yes
   vars:
     LOCAL_MAIN: ../../../../
