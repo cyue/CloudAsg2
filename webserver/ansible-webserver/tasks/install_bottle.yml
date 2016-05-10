@@ -1,4 +1,0 @@
-# ./ansible-webserver/install_bottle.yml
-
-- name: BOTTLE | pip install python bottle
-  pip: name=bottle state=latest

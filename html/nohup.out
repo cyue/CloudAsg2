@@ -1,0 +1,218 @@
+Bottle v0.12.9 server starting up (using WSGIRefServer())...
+Listening on http://115.146.89.128:80/
+Hit Ctrl-C to quit.
+
+220.244.79.17 - - [09/May/2016 14:44:58] "GET / HTTP/1.1" 200 9469
+220.244.79.17 - - [09/May/2016 14:44:58] "GET /static/images/movie.jpg HTTP/1.1" 200 58841
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+    rv = callback(*a, **ka)
+TypeError: show() takes no arguments (1 given)
+14.201.52.39 - - [09/May/2016 14:45:03] "GET /page/reference HTTP/1.1" 500 755
+14.201.52.39 - - [09/May/2016 14:45:12] "GET / HTTP/1.1" 200 9469
+14.201.52.39 - - [09/May/2016 14:45:12] "GET / HTTP/1.1" 200 9469
+14.201.52.39 - - [09/May/2016 14:45:18] "GET /page/task1 HTTP/1.1" 200 5880
+14.201.52.39 - - [09/May/2016 14:45:19] "GET /task1data1 HTTP/1.1" 200 17767
+14.201.52.39 - - [09/May/2016 14:45:19] "GET /task1data2 HTTP/1.1" 200 793
+14.201.52.39 - - [09/May/2016 14:45:20] "GET /task1data1 HTTP/1.1" 200 17767
+14.201.52.39 - - [09/May/2016 14:45:29] "GET /page/task2 HTTP/1.1" 200 3488
+14.201.52.39 - - [09/May/2016 14:45:37] "GET /task2data1 HTTP/1.1" 200 29350
+14.201.52.39 - - [09/May/2016 14:45:47] "GET /task2data HTTP/1.1" 200 11195392
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+14.201.52.39 - - [09/May/2016 14:45:47] "GET /task2data HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 283, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+220.244.79.17 - - [09/May/2016 14:45:47] "GET /page/task2 HTTP/1.1" 200 3488
+14.201.52.39 - - [09/May/2016 14:45:47] "GET /page/task3 HTTP/1.1" 200 5248
+220.244.79.17 - - [09/May/2016 14:45:55] "GET /task2data1 HTTP/1.1" 200 29350
+220.244.79.17 - - [09/May/2016 14:46:12] "GET /task2data HTTP/1.1" 200 11195392
+14.201.52.39 - - [09/May/2016 14:46:31] "GET /task3data HTTP/1.1" 200 11286533
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+14.201.52.39 - - [09/May/2016 14:46:31] "GET /task3data HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 283, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+14.201.52.39 - - [09/May/2016 14:46:31] "GET /page/task4 HTTP/1.1" 200 10696
+14.201.52.39 - - [09/May/2016 14:46:31] "GET /page/task4 HTTP/1.1" 200 10696
+14.201.52.39 - - [09/May/2016 14:46:31] "GET /page/task4 HTTP/1.1" 200 10696
+14.201.52.39 - - [09/May/2016 14:46:31] "GET / HTTP/1.1" 200 9469
+14.201.52.39 - - [09/May/2016 14:46:31] "GET /static/images/movie.jpg HTTP/1.1" 304 0
+14.201.52.39 - - [09/May/2016 14:46:33] "GET /task4data4 HTTP/1.1" 200 3703
+14.201.52.39 - - [09/May/2016 14:46:33] "GET /task4data3 HTTP/1.1" 200 1114
+14.201.52.39 - - [09/May/2016 14:46:34] "GET /task4data1 HTTP/1.1" 200 1148
+14.201.52.39 - - [09/May/2016 14:46:35] "GET /task4data2 HTTP/1.1" 200 3784
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+    rv = callback(*a, **ka)
+TypeError: show() takes no arguments (1 given)
+14.201.52.39 - - [09/May/2016 14:46:59] "GET /page/reference HTTP/1.1" 500 755
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+    rv = callback(*a, **ka)
+TypeError: show() takes no arguments (1 given)
+14.201.52.39 - - [09/May/2016 14:47:10] "GET /page/reference HTTP/1.1" 500 755
+Bottle v0.12.9 server starting up (using WSGIRefServer())...
+Listening on http://115.146.89.128:80/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+    rv = callback(*a, **ka)
+TypeError: show() takes no arguments (1 given)
+14.201.52.39 - - [09/May/2016 14:49:43] "GET /page/reference HTTP/1.1" 500 755
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+    rv = callback(*a, **ka)
+TypeError: show() takes no arguments (1 given)
+14.201.52.39 - - [09/May/2016 14:49:43] "GET /page/reference HTTP/1.1" 500 755
+14.201.52.39 - - [09/May/2016 14:49:49] "GET / HTTP/1.1" 200 9459
+14.201.52.39 - - [09/May/2016 14:49:51] "GET /reference HTTP/1.1" 200 5331
+Bottle v0.12.9 server starting up (using WSGIRefServer())...
+Listening on http://115.146.89.128:80/
+Hit Ctrl-C to quit.
+
+14.201.52.39 - - [09/May/2016 14:55:50] "GET /reference HTTP/1.1" 200 5364
+14.201.52.39 - - [09/May/2016 14:55:57] "GET / HTTP/1.1" 200 9459
+14.201.52.39 - - [09/May/2016 14:55:58] "GET /description HTTP/1.1" 404 742
+14.201.52.39 - - [09/May/2016 14:56:04] "GET /page/task1 HTTP/1.1" 200 7456
+14.201.52.39 - - [09/May/2016 14:56:06] "GET /task1data1 HTTP/1.1" 200 17767
+14.201.52.39 - - [09/May/2016 14:56:06] "GET /task1data2 HTTP/1.1" 200 793
+14.201.52.39 - - [09/May/2016 14:56:07] "GET /task1data1 HTTP/1.1" 200 17767
+14.201.52.39 - - [09/May/2016 14:56:13] "GET /page/task2 HTTP/1.1" 200 5092
+14.201.52.39 - - [09/May/2016 14:56:22] "GET /task2data1 HTTP/1.1" 200 29350
+14.201.52.39 - - [09/May/2016 14:56:31] "GET /task2data HTTP/1.1" 200 11195392
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+14.201.52.39 - - [09/May/2016 14:56:31] "GET /task2data HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 283, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+14.201.52.39 - - [09/May/2016 14:56:31] "GET /page/task4 HTTP/1.1" 200 10686
+14.201.52.39 - - [09/May/2016 14:56:32] "GET /task4data1 HTTP/1.1" 200 1148
+14.201.52.39 - - [09/May/2016 14:56:33] "GET /task4data2 HTTP/1.1" 200 3784
+14.201.52.39 - - [09/May/2016 14:56:34] "GET /task4data3 HTTP/1.1" 200 1114
+14.201.52.39 - - [09/May/2016 14:56:35] "GET /task4data4 HTTP/1.1" 200 3703
+Bottle v0.12.9 server starting up (using WSGIRefServer())...
+Listening on http://115.146.89.128:80/
+Hit Ctrl-C to quit.
+
+14.201.52.39 - - [09/May/2016 14:57:24] "GET /reference HTTP/1.1" 200 5396
+Bottle v0.12.9 server starting up (using WSGIRefServer())...
+Listening on http://115.146.89.128:80/
+Hit Ctrl-C to quit.
+
+14.201.52.39 - - [09/May/2016 14:58:46] "GET /reference HTTP/1.1" 200 5427
+14.201.52.39 - - [09/May/2016 14:59:00] "GET / HTTP/1.1" 200 9459
+14.201.52.39 - - [09/May/2016 14:59:03] "GET /page/task4 HTTP/1.1" 200 10686
+14.201.52.39 - - [09/May/2016 14:59:04] "GET /task4data3 HTTP/1.1" 200 1114
+14.201.52.39 - - [09/May/2016 14:59:05] "GET /task4data4 HTTP/1.1" 200 3703
+14.201.52.39 - - [09/May/2016 14:59:06] "GET /task4data2 HTTP/1.1" 200 3784
+14.201.52.39 - - [09/May/2016 14:59:06] "GET /task4data1 HTTP/1.1" 200 1148
+14.201.52.39 - - [09/May/2016 14:59:15] "GET / HTTP/1.1" 200 9459
+14.201.52.39 - - [09/May/2016 14:59:16] "GET /reference HTTP/1.1" 200 5427
+220.244.79.17 - - [09/May/2016 15:24:54] "GET / HTTP/1.1" 200 9459
+220.244.79.17 - - [09/May/2016 15:24:54] "GET /static/images/movie.jpg HTTP/1.1" 200 58841
+66.249.80.29 - - [09/May/2016 15:30:55] "GET / HTTP/1.1" 200 9459
+66.249.80.38 - - [09/May/2016 15:30:56] "GET /favicon.ico HTTP/1.1" 404 742
+91.196.50.33 - - [09/May/2016 22:19:38] "GET http://testp1.piwo.pila.pl/testproxy.php HTTP/1.1" 404 806
+185.25.148.240 - - [09/May/2016 22:31:36] "GET http://testp1.piwo.pila.pl/testproxy.php HTTP/1.1" 404 806
+110.148.137.27 - - [09/May/2016 23:11:49] "GET /page/task2 HTTP/1.1" 200 5092
+110.148.137.27 - - [09/May/2016 23:11:58] "GET /task2data1 HTTP/1.1" 200 29350
+110.148.137.27 - - [09/May/2016 23:12:14] "GET /task2data HTTP/1.1" 200 11195392
+110.148.137.27 - - [09/May/2016 23:12:14] "GET /favicon.ico HTTP/1.1" 404 742
+210.185.72.174 - - [10/May/2016 01:01:02] "GET / HTTP/1.1" 200 9459
+210.185.72.174 - - [10/May/2016 01:01:04] "GET /static/images/movie.jpg HTTP/1.1" 200 58841
+210.185.72.174 - - [10/May/2016 01:01:08] "GET /favicon.ico HTTP/1.1" 404 742
+210.185.72.174 - - [10/May/2016 01:02:35] "GET /page/task1 HTTP/1.1" 200 7456
+210.185.72.174 - - [10/May/2016 01:02:45] "GET /task1data1 HTTP/1.1" 200 17767
+210.185.72.174 - - [10/May/2016 01:02:48] "GET /task1data2 HTTP/1.1" 200 793
+210.185.72.174 - - [10/May/2016 01:02:55] "GET /task1data1 HTTP/1.1" 200 17767
+110.148.137.27 - - [10/May/2016 01:06:24] "GET / HTTP/1.1" 200 9459
+110.148.137.27 - - [10/May/2016 01:06:24] "GET /static/images/movie.jpg HTTP/1.1" 200 58841
+110.148.137.27 - - [10/May/2016 01:06:40] "GET /page/task3 HTTP/1.1" 200 5248
+110.148.137.27 - - [10/May/2016 01:07:09] "GET /task3data HTTP/1.1" 200 11286533
+66.249.80.29 - - [10/May/2016 01:25:49] "GET /favicon.ico HTTP/1.1" 404 742
+110.148.137.27 - - [10/May/2016 02:28:48] "GET / HTTP/1.1" 200 9459
+185.25.151.159 - - [10/May/2016 02:47:05] "GET http://testp4.pospr.waw.pl/testproxy.php HTTP/1.1" 404 806

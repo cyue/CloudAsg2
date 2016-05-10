@@ -1,0 +1,18 @@
+# ./ansible-nginx/deploy.yml
+
+- become: yes
+  become_user: root
+  hosts: nginx
+  vars: 
+    WEBROOT: /home/cyue/CloudAsg2/webserver/html
+    MAIN: /home/cyue/CloudAsg2
+
+  tasks:
+    #- command: chdir={{playbook_dir}} sh env.sh
+    #- include: 'tasks/install_nginx.yml'
+    #- include: 'tasks/install_software.yml'
+    #- include: 'tasks/launch_server.yml'
+    #- name: create
+    #  unarchive: src={{MAIN}}/test.zip dest=/mnt/ 
+    - name: create
+      command: python {{MAIN}}/t.py chdir={{MAIN}}

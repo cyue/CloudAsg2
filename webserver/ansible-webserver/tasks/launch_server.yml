@@ -1,6 +1,0 @@
-# ./ansible-webserver/tasks/launch_server.yml
-
-- name: Web server | starting webserver
-  command: python {{WEBROOT}}/app.py {{WEBROOT}} 
-
-
